@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card_todolist z-depth-1">
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <p class="col">tasks list</p>
+                <div class="input-field col s12">
+                  <input id="tasks_list" type="text" class="validate">
+                  <label for="tasks_list">new task</label>
+                  <a class="waves-effect waves-light btn" id="task_list_btn">add task</a>
+                </div>           
+              </div>
+
+              <div class="row">
+                <!-- <p class="col s6">tasks</p> -->
+                <p class="col s4 tasks_count">tasks count : <span>0</span></p>
+                <p class="col s4 tasks_total">total : <span>0</span></p>
+                <div class="input-field col s12">
+                  <input id="tasks_filter" type="text" class="validate">
+                  <label for="tasks_filter">filter tasks</label>
+
+                  <div class="todoTasks">
+                    <!-- <ul class="tasks">
+                        <li>sdgdxfz</li>
+                        <span class="exit"><i class="fa-solid fa-xmark"></i></span>
+                    </ul> -->
+                    
+                  </div>
+
+                  <a class="waves-effect grey darken-4 btn" id="clear_list_btn">clear tasks</a>
+
+                </div>           
+              </div>
+              
+            </form>
+          </div>
+    </div>
+
+
+
+    <div class="popUp_Delete">
+        <div class="popup_box">
+            <p>are you sure to delete task</p>
+            <button class="delete_task_popup btn">delete</button>
+            <button class="cansle_task_popup btn red darken-3">cansle</button>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>

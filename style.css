@@ -1,0 +1,111 @@
+.card_todolist{
+    margin: 20px 15%;
+}
+p{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 2px 3px rgba(0 , 0 , 0 ,25%);
+    margin: 5px 0;
+}
+.tasks li{
+    margin-top: 0;
+    font-size: 18px;
+    padding-left: 7px;
+    text-transform: uppercase;
+    color: #666;
+}
+.tittleTasks{
+    max-width: 55%;
+    transition: all .4s;
+    line-break: anywhere;
+}
+.tittleTasks.liFinished{
+    text-decoration: line-through;
+    color: red;
+}
+.buttons{
+    display: flex;
+}
+.btn_del{
+    margin-left: 10px;
+}
+.buttons .finish{
+    background-color: #d60303;
+}
+.btn_del,
+.btn_finished{
+    font-size: 14px;
+    background-color: #26a69a;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 90px;
+    height: 35px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius:5px;
+    margin-top: 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+.popUp_Delete{
+    width: 50%;
+    height: 25%;
+    background: #ccc;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s;
+}
+.popup_box{
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.popup_box p{
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+popup_box button{
+    cursor: pointer;
+}
+.delete_task_popup {
+    margin-right: 20px;
+}
+
+@media (max-width:767px){
+    .card_todolist{
+        margin: 0;
+    }
+    .popUp_Delete{
+        width: 80%;
+        height: auto;
+    }
+    .popup_box p{
+        font-size: 19px;
+    }
+    .btn_del,
+    .btn_finished{
+        font-size: 12px;
+        width: 70px;
+        height: 30px;
+    }
+    .row p{
+        font-size: 16px;
+    }
+    
+}
